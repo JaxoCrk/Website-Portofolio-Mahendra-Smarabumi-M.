@@ -1,0 +1,27 @@
+@import './global';
+@import './header';
+@import './banner';
+@import './promo';
+// Portfolio sections follow the same order as index.html.
+@import './about';
+@import './skill';
+@import './service';
+@import './portfolio';
+@import './testimonial';
+@import './pricing';
+@import './contact';
+@import './social-share';
+@import './footer';
+
+body *,
+body *::before,
+body *::after {
+	cursor: url('../Gambar/cursor.png') 8 8, auto;
+}
+
+body.is-clicking,
+body.is-clicking *,
+body.is-clicking *::before,
+body.is-clicking *::after {
+	cursor: url('../Gambar/cursorclick.png') 8 8, auto;
+}

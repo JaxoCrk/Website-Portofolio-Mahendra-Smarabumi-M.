@@ -1,0 +1,63 @@
+#skills {
+  background-color: #ffe79a;
+  background-image: url('../Gambar/background1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .skill--content {
+    display: block;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left {
+      flex-basis: 30%;
+      .section-number {
+        color: #331a04;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 36px;
+        color: #222;
+      }
+    }
+    .right {
+      flex-basis: 65%;
+      display: block;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+      }
+      .item {
+        flex-basis: 32%;
+        text-align: center;
+        border: 1px solid #222;
+        padding: 30px 15px;
+        margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0;
+        }
+
+        border-width: 5px 5px 5px 5px;
+        border-image: linear-gradient(45deg, rgba(#FF9800, 1) 0%, rgba(#800080, 1) 100%);
+        border-image-slice: 9;
+        border-style: solid;
+        background-color: rgba(255, 250, 240, 0.7);
+        transition: background-color 0.15s ease, transform 0.15s ease;
+        &:hover {
+          background-color: #DEF0FF;
+          transform: translateY(-8px) scale(1.02);
+        }
+        img {
+          max-width: 100px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

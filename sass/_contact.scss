@@ -1,0 +1,17 @@
+#contact {
+  background: #fff7e1;
+  background-image: linear-gradient(rgba(194, 122, 0, 0.06) 1.5px, transparent 1.5px), linear-gradient(90deg, rgba(194, 122, 0, 0.06) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+
+  .contact-detail, address {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+  }
+  address {
+    margin-top: 60px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
